@@ -11,6 +11,9 @@ int subtract(int i, int j) {
 int multiply(int i, int j) {
     return (i * j);
 }
+float inverse(int i) {
+    return (1/i);
+}
 int square(int i) {
     return (i * i);
 }
@@ -79,7 +82,7 @@ int main() {
             case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("Inverse is %f\n",inverse(a));
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
@@ -91,3 +94,6 @@ int main() {
 
     return 0;
 }
+
+
+
