@@ -11,7 +11,12 @@ int subtract(int i, int j) {
 int multiply(int i, int j) {
     return (i * j);
 }
-
+int square(int i) {
+    return (i * i);
+}
+int cube(int i) {
+    return (i * i*i);
+}
 float divide(int i, int j) {
     if (j == 0) {
         printf("Error: Division by zero is not allowed.\n");
@@ -64,12 +69,12 @@ int main() {
             case '^':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The square of number is %d\n",square(a));
                 break;
             case '#':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The cube of number is %d\n",cube(a));
                 break;
             case 'i':
                 printf("Enter an integer: ");
